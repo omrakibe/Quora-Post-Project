@@ -1,0 +1,99 @@
+body {
+  background-image: url("https://th.bing.com/th/id/OIP.gP-HAKpHaZX4khz6gMYDYQHaEK?rs=1&pid=ImgDetMain");
+  background-size: cover;
+  opacity: 0.8;
+  background-blend-mode: lighten;
+  text-align: center;
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+#heading {
+  color: red;
+  font-size: 30px;
+  text-decoration: dashed underline;
+}
+.post {
+  background-color: lightgrey;
+}
+.user {
+  font-style: italic;
+}
+.content {
+  color: brown;
+}
+
+a:link,
+a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover,
+a:active {
+  background-color: rgb(37, 209, 209);
+  color: rgb(88, 34, 34);
+}
+
+.backbtn:link,
+.backbtn:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgba(191, 25, 25, 0.885);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.backbtn:hover,
+.backbtn:active {
+  background-color: rgba(191, 25, 25, 0.885);
+  color: rgb(243, 238, 238);
+}
+
+.newpost:link,
+.newpost:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(235, 245, 235);
+  border-radius: 19px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.newpost:hover,
+.newpost:active {
+  background-color: rgb(3, 32, 3);
+  color: rgb(239, 233, 233);
+}
+
+.input {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover {
+  background-color: azure;
+  color: #1e2c21;
+}

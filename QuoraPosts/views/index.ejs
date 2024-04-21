@@ -1,0 +1,29 @@
+<%- include("includes/head.ejs") %>
+  <body>
+    <div id="heading">
+      <h1>Quora Posts</h1>
+    </div>
+    <% for (posts of post) {%>
+    <div class="post">
+      <h2 class="user">@<%= posts.username %></h2>
+      <h3 class="content"><%= posts.content %></h3>
+      <div style="display: flex; justify-content: center;">
+        <a href="http://localhost:1100/post/<%= posts.id %>" style="margin-top: 10px; margin-bottom: 3px;">See in Detail</a> &nbsp; &nbsp;
+      <a href="http://localhost:1100/post/<%= posts.id %>/edit" style="margin-top: 10px; margin-bottom: 3px;">Edit the Post</a> &nbsp; &nbsp;
+      
+      <form method="post" action="/post/<%= posts.id %>?_method=delete"><button class="backbtn" ><span class="material-symbols-outlined" style="padding-top: 5px;">
+        delete
+        </span></button>
+      </form>
+      </div>
+      
+    </div>
+    <% } %>
+
+    <br />
+
+    <a href="http://localhost:1100/post/new" class="newpost"
+      >Create a new Post</a
+    >
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<%- include("includes/head.ejs") %>
+  <body>
+    <div id="heading">
+      <h2>Post in Details-</h2>
+    </div>
+    
+    <p style="color: white;">Post id:- <%= posts.id %></p>
+
+    <div class="post">
+      <h2 class="user">@<%= posts.username %></h2>
+      <h3 class="content"><%= posts.content %></h3>
+    </div>
+
+    <a href="http://localhost:1100/post" class="backbtn">Go Back</a>
+  </body>
+</html>
